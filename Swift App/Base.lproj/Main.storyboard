@@ -34,22 +34,47 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gz3-9z-nTw"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDr-yb-Pps">
+                                <rect key="frame" x="137.5" y="108" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="44x-sj-OHF"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7rA-X9-Jss">
+                                <rect key="frame" x="137.5" y="146" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="M4r-d6-CQZ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Kmi-dh-w4M" firstAttribute="centerX" secondItem="lVi-om-dNV" secondAttribute="centerX" id="3P8-w3-xns"/>
+                            <constraint firstItem="bDr-yb-Pps" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EBL-H6-OXs"/>
                             <constraint firstItem="Kmi-dh-w4M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KAO-LW-GEU"/>
+                            <constraint firstItem="bDr-yb-Pps" firstAttribute="top" secondItem="lVi-om-dNV" secondAttribute="bottom" constant="-2" id="Oaw-iD-cQG"/>
+                            <constraint firstItem="bDr-yb-Pps" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gbj-7v-M9p"/>
                             <constraint firstItem="lVi-om-dNV" firstAttribute="top" secondItem="Kmi-dh-w4M" secondAttribute="bottom" constant="19" id="t9m-a0-81f"/>
                             <constraint firstItem="Kmi-dh-w4M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="wED-Eg-UbY"/>
+                            <constraint firstItem="7rA-X9-Jss" firstAttribute="top" secondItem="bDr-yb-Pps" secondAttribute="bottom" constant="8" id="x3z-fU-du9"/>
+                            <constraint firstItem="7rA-X9-Jss" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zqe-S6-9r6"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="bDr-yb-Pps" id="qj8-CH-2zM"/>
+                        <outlet property="text2" destination="7rA-X9-Jss" id="e3A-wE-zWR"/>
                         <outlet property="theLabel" destination="Kmi-dh-w4M" id="aq6-fo-zbT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-47" y="-141"/>
+            <point key="canvasLocation" x="20" y="-126"/>
         </scene>
     </scenes>
 </document>
